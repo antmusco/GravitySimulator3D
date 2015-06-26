@@ -1,0 +1,13 @@
+[H[2JCLEANING...
+rm -f release/*.o
+rm -f release/system.exe
+
+PROJECT CLEAN.
+Making project...
+=======================================================
+g++ -Wall -Werror -std=c++11 -g -Ilib/include -c src/camera.cpp -o release/camera.o
+g++ -Wall -Werror -std=c++11 -g -Ilib/include -c src/display.cpp -o release/display.o
+g++ -Wall -Werror -std=c++11 -g -Ilib/include -c src/eventmanager.cpp -o release/eventmanager.o
+g++ -Wall -Werror -std=c++11 -g -Ilib/include -c src/shader.cpp -o release/shader.o
+g++ -Wall -Werror -std=c++11 -g -Ilib/include -c src/geometry.cpp -o release/geometry.o
+g++ -Wall -Werror -std=c++11 -g -Ilib/include -c src/orbitalsystem.cpp -o release/orbitalsystem.o
